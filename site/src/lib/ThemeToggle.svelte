@@ -11,8 +11,8 @@
     document.documentElement.dataset.theme = theme
 
     // Update syntax highlighting stylesheets
-    const starry_light = document.getElementById(`starry-light`)
-    const starry_dark = document.getElementById(`starry-dark`)
+    const starry_light = document.querySelector(`#starry-light`)
+    const starry_dark = document.querySelector(`#starry-dark`)
     if (starry_light && starry_dark) {
       starry_light.media = theme === `light` ? `all` : `not all`
       starry_dark.media = theme === `dark` ? `all` : `not all`

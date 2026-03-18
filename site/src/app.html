@@ -40,7 +40,7 @@
 
     <!-- Theme switching script -->
     <script>
-      const media_query = window.matchMedia('(prefers-color-scheme: dark)')
+      const media_query = globalThis.matchMedia('(prefers-color-scheme: dark)')
       const theme = localStorage.theme || (media_query.matches ? 'dark' : 'light')
 
       // Apply theme immediately to prevent flash
